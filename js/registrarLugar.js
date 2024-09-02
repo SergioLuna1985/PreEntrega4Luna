@@ -362,7 +362,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let pelicula_3 = {};
   let pelicula_4 = {};
 
-  fetch("/PreEntrega4Luna/peliculas.json")
+/*   fetch("/PreEntrega4Luna/peliculas.json")
     .then((res) => res.json())
     .then((peliculas)=>{
 
@@ -387,7 +387,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
       });
       
+  }) */
+
+  fetch("http://www.omdbapi.com/?apikey=2ac80102&t=jurassic+park")
+  .then((res) => res.json())
+  .then((pelicula)=>{
+
+    pelicula_1 = pelicula;
+    
   })
+
+  fetch("http://www.omdbapi.com/?apikey=2ac80102&t=back+to+the+future")
+  .then((res) => res.json())
+  .then((pelicula)=>{
+
+    pelicula_2 = pelicula;
+    
+  })
+
+  fetch("http://www.omdbapi.com/?apikey=2ac80102&t=interstellar")
+  .then((res) => res.json())
+  .then((pelicula)=>{
+
+    pelicula_3 = pelicula;
+    
+  })
+
+  fetch("http://www.omdbapi.com/?apikey=2ac80102&t=the+martian")
+  .then((res) => res.json())
+  .then((pelicula)=>{
+
+    pelicula_4 = pelicula;
+    
+  })
+
 
 
 
