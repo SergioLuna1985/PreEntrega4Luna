@@ -1,0 +1,21 @@
+.grid-container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header header header header header header header header header header"
+      ". disposicion disposicion disposicion disposicion disposicion disposicion . ticket ticket ticket ."
+      "footer footer footer footer footer footer footer footer footer footer footer footer";
+  }
+  
+header { grid-area: header;}
+
+.disposicion { grid-area: disposicion;}
+
+.ticket { grid-area: ticket;}
+
+footer { grid-area: footer;}
+
+
+  

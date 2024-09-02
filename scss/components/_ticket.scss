@@ -1,0 +1,35 @@
+.ticket{
+    background-color: $background-secondary-light; 
+    color: $primary-color;
+    
+
+    .container-flex{
+        display: flex;
+
+        div{
+
+            p{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: rgb(37, 37, 37);
+            }
+
+            p:first-child{
+                text-align: center;
+                font-size: 30px;
+                color: black;
+            }
+
+            p>span{
+                color: black;;
+                font-size: larger;
+            }
+        }
+    }
+
+    .card{
+        border-bottom: 1px solid black;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+}

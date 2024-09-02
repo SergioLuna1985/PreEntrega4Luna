@@ -1,0 +1,163 @@
+/* @import './utilities/mixins'; */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, main, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.5fr 1.5fr 1.5fr 1.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header header header header header header header header header header header header" ". disposicion disposicion disposicion disposicion disposicion disposicion . ticket ticket ticket ." "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+header {
+  grid-area: header;
+}
+
+.disposicion {
+  grid-area: disposicion;
+}
+
+.ticket {
+  grid-area: ticket;
+}
+
+footer {
+  grid-area: footer;
+}
+
+body {
+  background-color: #ececec;
+}
+
+header {
+  color: #D6D4D4;
+  background-color: #000000;
+}
+
+footer {
+  background-color: #000000;
+  color: #818181;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.disposicion {
+  background-color: #ececec;
+  font-size: 15px;
+}
+.disposicion table {
+  width: 100%;
+  height: 100%;
+  color: black;
+  border-collapse: separate;
+  border-spacing: 3px;
+}
+.disposicion table tbody tr {
+  background-color: rgb(158, 158, 158);
+}
+.disposicion table tbody tr .no_disponible {
+  visibility: hidden;
+}
+.disposicion table tbody tr .hover {
+  background-color: #222222;
+  color: #F8F8F8;
+}
+.disposicion table tbody tr .seleccionada {
+  background-color: rgb(42, 26, 255);
+  color: white;
+}
+.disposicion table tbody tr td {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 0 0 4px 4px;
+  padding: 3px;
+  text-align: center;
+}
+
+.ticket {
+  background-color: #F8F8F8;
+  color: #222222;
+}
+.ticket .container-flex {
+  display: flex;
+}
+.ticket .container-flex div p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(37, 37, 37);
+}
+.ticket .container-flex div p:first-child {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+}
+.ticket .container-flex div p > span {
+  color: black;
+  font-size: larger;
+}
+.ticket .card {
+  border-bottom: 1px solid black;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=styles.css.map */

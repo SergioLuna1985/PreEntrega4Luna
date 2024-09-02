@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <title>CineArt</title>
+</head>
+<body>
+
+    <div class="grid-container">
+        <header>
+          
+            <div>
+                <p>Seleccioná la sala</p>
+                <select name="salas" id="salas">
+                    <option value="0">Sala 1 » Jurassic Park</option>
+                    <option value="1">Sala 2 » Volver al futuro</option>
+                    <option value="2">Sala 3 » Interestelar</option>
+                    <option value="3">Sala 4 » The Martian</option>
+                </select>
+            </div>
+        </header>
+     
+        <div class="disposicion">
+            <div id="contenedor"></div>
+        </div>
+        <div id="ticket" class="ticket">  
+    
+        </div>
+       
+        <footer>
+            <div>
+                <img src="./img/logoCinema.PNG" width="80px" alt="LogoCinema" srcset="">
+                <p><span>CINEART</span></p>
+                <p>TODOS LOS DERECHOS RESERVADOS © SERGIO LUNA</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="./js/disposicionSalas.js"></script>
+    <script src="./js/registrarLugar.js"></script>
+
+</body>
+</html>
